@@ -51,7 +51,83 @@
         </div>
 </section>
 
-    <section></section>
+    <section class="fecha">
+        <p class="mensaje">
+            Tenemos el honor de invitarte <br> a nuestra boda al civil
+        </p>
+
+        <img class="dia" src="img/FECHABODA.svg" alt="">
+
+        <div id="countdown-container">
+        <div class="time-block">
+            <span class="time-number" id="days">00</span>
+            <span class="time-label">Días</span>
+        </div>
+        <div class="time-block">
+            <span class="time-number" id="hours">00</span>
+            <span class="time-label">Horas</span>
+        </div>
+        <div class="time-block">
+            <span class="time-number" id="minutes">00</span>
+            <span class="time-label">Min</span>
+        </div>
+        <div class="time-block">
+            <span class="time-number" id="seconds">00</span>
+            <span class="time-label">Seg</span>
+        </div>
+    </div>
+
+    <div id="expired-message">¡Tiempo Cumplido!</div>
+    
+    <div class="calendario">
+        <h3 class="diatexto">EL GRAN DIA</h3>
+        <h5 class="mes">ENERO 2026</h5>
+        <img class="imgcal" src="img/calendario1.svg" alt="">
+    </div>
+</section>
+
+    <section class="musica">
+        <img class="imagenmusica" src="img/fotoboda (5).jpeg" alt="">
+
+        <div class="cajatextomusica">
+            <p class="textomusica">De nadie seré, solo de ti. Hasta que mis huesos se vuelvan cenizas y mi corazón deje de latir.</p>
+        </div>
+
+        <div class="player-wrapper">
+            <p class="titleplayer">Nuestra Canción</p>
+    <audio id="eventoAudio" loop >
+        <source src="img/musica/trackdemuestra.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="custom-player">
+        <button id="playBtn" class="play-pause">▶</button>
+        
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-fill"></div>
+        </div>
+
+        <div class="volume-container">
+            <span class="vol-icon">🔈</span>
+            <input type="range" id="volSlider" min="0" max="1" step="0.1" value="0.8">
+        </div>
+    </div>
+</div>
+    </section>
+    
+    <Section class="infosection">
+        <div class="info-container">
+            <img class="imgformal" src="img/FORMAL.svg" alt="">
+
+            <div class="copa">
+                <img class="imgrecep" src="img/RECEPCION.svg" alt="">
+                <button class="btn-place">
+                    <a class="enlace" href="https://maps.app.goo.gl/YUjQkRKBw8iQ1ggU8" target="_blank" >Ver Ubicación</a>
+                </button>
+            </div>
+
+            <img class="actividades" src="img/ACTIVIDADES.svg" alt="">
+        </div>
+    </Section>
 
 
     <script src="app.js"></script>

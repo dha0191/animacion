@@ -180,3 +180,257 @@ border-radius: 50px
  text-align: center;
  font-size: 1.1em;
 }
+
+.fecha{
+    width: 380px;
+    height: 700px;
+    background-color: #b3907a;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.mensaje{
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.dia{
+    max-width: 300px;
+}
+
+#countdown-container {
+            display: flex;           /* Esto activa el modo flexible */
+            flex-direction: row;     /* Esto asegura que los elementos estén en fila horizontal */
+            gap: 10px;               /* Espacio entre cada caja (Días, Horas, etc.) */
+            padding: 15px;
+            
+        }
+
+        /* Estilo de cada bloque de tiempo individual */
+        .time-block {
+            display: flex;
+            flex-direction: column; /* Ponemos el número arriba y el texto abajo */
+            align-items: center;
+            min-width: 80px;        /* Ancho mínimo para que se vean uniformes */
+        }
+
+        /* Estilo de los NÚMEROS grandes */
+        .time-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            line-height: 1;
+        }
+
+        /* Estilo de las ETIQUETAS (Días, Horas...) */
+        .time-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: white;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* Estilo para el mensaje final */
+        #expired-message {
+            display: none; /* Oculto por defecto */
+            font-size: 2rem;
+            color: #d9534f;
+            font-weight: bold;
+        }
+
+        .calendario{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            max-width: 290px;
+        }
+
+        .diatexto{
+            color: white;
+            font-size: 2em;
+        }
+
+        .mes{
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .imgcal{
+            padding-top: 25px;
+            width: 250px;
+        }
+
+      .musica{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .imagenmusica{
+        width: 320px;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+      }
+
+      .cajatextomusica{
+        width: 280px;
+        height: auto;
+      }
+
+      .textomusica{
+        text-align: center;
+        font-size: 0.9em;
+      }
+        
+ .titleplayer{
+    text-align: center;
+    font-size: 1.3em;
+ }
+
+  :root {
+    --color-fondo: #ffffff;      /* Color de la barra */
+    --color-acento: #c1b6a3;     /* Color del play y la carga (pon el que quieras) */
+    --color-texto: #2f3542;      /* Color de los iconos */
+    --color-barra: #f1f2f6;      /* Color de fondo de la barrita de progreso */
+}
+
+.player-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.custom-player {
+    display: flex;
+    align-items: center;
+    background: var(--color-fondo);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    width: 250px;
+    gap: 15px;
+}
+
+.play-pause {
+    background: var(--color-acento);
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+/* Barra de progreso minimalista */
+.progress-container {
+    flex-grow: 1;
+    height: 6px;
+    background: var(--color-barra);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--color-acento);
+    transition: width 0.1s linear;
+}
+
+/* Volumen */
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#volSlider {
+    width: 60px;
+    accent-color: var(--color-acento);
+    cursor: pointer;
+}
+
+.vol-icon {
+    font-size: 0.9rem;
+}
+
+.infosection{
+    background-color: #efe7da;
+}
+
+.info-container{
+    width: 80%;
+    padding: 20px 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.imgformal{
+    width: 230px;
+}
+
+.copa{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imgrecep{
+    width: 210px;
+}
+
+.btn-place{
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);    
+}
+
+.btn-place:hover{
+    background-color: #2f3542;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.enlace{
+    text-decoration: none;
+    color: #2f3542;
+    font-size: 1.2em;
+    font-family: "Cardo", serif;
+}
+
+.enlace:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: "Cardo", serif;
+    transition: 0.4s ease-in-out;
+}
+
+.actividades{
+    width: 280px;
+}
