@@ -1,0 +1,182 @@
+*{
+    max-width: 380px;
+   
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedorsobre{
+    width: 380px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sobreuno{
+    position: absolute;
+    top: -10px;
+    z-index: 5;
+}
+
+.sobredos{
+    position: absolute;
+    bottom: 5px;
+}
+
+.boton{
+ position: absolute;
+ z-index: 6;
+ bottom: 120px;
+ left: 120px;
+ right: 120px;
+
+background-color: rgb(255, 255, 255);
+border: none;
+padding: 10px 5px;
+border-radius: 50px
+}
+
+.textoboton{
+    font-size: 1.5em;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+}
+
+.textosobre{
+    position: absolute;
+    z-index: 7;
+
+    top: 80px;
+    left: 90px;
+}
+
+.nombres{
+    font-family: "Imperial Script", cursive;
+    font-weight: 200;
+    text-align: center;
+    line-height: 50px;
+    font-size: 4em;
+} 
+
+/*animaciones*/
+
+.animacionactivada .sobreuno{
+    transform: translateY(-100%);
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+}
+
+.animacionactivada .sobredos{
+    transform: translateY(100%);
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+}
+
+.animacionactivada .nombres{
+    transform: translateX(-100%);
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+}
+
+.animacionactivada .boton{
+    
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.animacionactivada .textoboton{
+    
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.animacionactivada .carousel-container{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.contenedorseccion1{
+    opacity: 100;
+
+    background-color: rgb(255, 250, 243);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Contenedor principal: Oculta lo que se desborda y centra el carrusel */
+.carousel-container {
+    opacity: 0;
+  width: 100%; /* O un ancho fijo, por ejemplo 800px */
+  overflow: hidden; /* Muy importante para que solo se vea una parte del track */
+  margin: 20px auto; /* Centra el carrusel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efecto de sombra sutil */
+  border-radius: 8px;
+}
+
+/* El track: Contiene todas las imágenes y se mueve */
+.carousel-track {
+  display: flex; /* Para que las imágenes se pongan una al lado de la otra */
+  width: calc(300px * 10); /* Ancho total de todas las imágenes (5 originales + 5 duplicadas) */
+  /* El 300px es el ancho de CADA imagen. Multiplicamos por 10 (total de imágenes) */
+  
+  animation: scrollCarousel 60s linear infinite; /* ¡Aquí está la animación! */
+  /* 20s: Duración de un ciclo completo
+     linear: Velocidad constante
+     infinite: Se repite sin parar */
+}
+
+/* Estilos de cada imagen dentro del track */
+.carousel-track img {
+  width: 300px;  /* Ancho fijo de cada imagen */
+  height: 500px; /* Alto fijo de cada imagen */
+  flex-shrink: 0; /* IMPEDIR que las imágenes se encojan */
+  object-fit: cover; /* Para que las imágenes no se deformen, cubran el espacio */
+  display: block; /* Elimina pequeños espacios en blanco que el navegador agrega a las imágenes */
+}
+
+/* La animación: Define cómo se mueve el track */
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0); /* Empieza en la posición original */
+  }
+  100% {
+    /* Mueve el track a la izquierda el ancho de un bloque de 5 imágenes */
+    transform: translateX(calc(-300px * 5)); 
+    /* -300px (ancho de 1 imagen) * 5 (número de imágenes ORIGINALES) */
+  }
+}
+
+.texto1{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animacionactivada .anillo{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.anillo{
+    opacity: 0;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.animacionactivada .textofoto {
+    opacity: 100;
+    transition: 2s ease-in-out;}
+
+.textofoto{
+    opacity: 0;
+ text-align: center;
+ font-size: 1.1em;
+}
