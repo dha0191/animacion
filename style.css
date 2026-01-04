@@ -434,3 +434,26 @@ border-radius: 50px
 .actividades{
     width: 280px;
 }
+
+.asistir-contain{
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-asistir{
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: #b3907a;
+    border: none;
+    border-radius: 20px;    
+}
+
+.enlace-asistir{
+    color: white;
+    font-size: 1.3em;
+    font-family: "Cardo", serif;
+    text-decoration: none;
+}
