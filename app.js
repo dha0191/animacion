@@ -1,6 +1,6 @@
 const boton = document.getElementById('boton');
 
-const contenedor = document.querySelector('.contenedorsobre');
+const contenedor = document.querySelector('.contenedorpagina');
 
 
 boton.addEventListener('click', () => {
